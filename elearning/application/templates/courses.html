@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% block title %}Contact us{% endblock %}
+{% block content %}
+	<section class="page-top-section set-bg" data-setbg="{{ url_for('static',filename='img/page-top-bg.jpg') }}">
+		<div class="container text-white">
+			<h3>{{ title }}</h3>
+		</div>
+	</section>
+	
+	{% include 'search.html' %}
+	
+	<!-- Courses section  -->
+	<!--  Page top end -->
+	<section class="courses-section spad">
+		<div class="container">
+			<div class="sec-title text-center">
+				<span>Only  the best</span>
+				<h2>Our Courses</h2>
+			</div>
+			<div class="course-slider owl-carousel">
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/1.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Italian for Begginers & Advanced Course</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/1.jpg') }}"></div>
+							<h6>By Sebastian Smith, <span>Italian Teacher</span></h6>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/2.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>English Literature Advanced Course</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/2.jpg') }}"></div>
+							<h6>By Maria Williams, <span>English Teacher</span></h6>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/3.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Portrait Photography Course for Begginers</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/3.jpg') }}"></div>
+							<h6>By Jack Smith, <span>Photographer</span></h6>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/4.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Italian for Begginers & Advanced Course</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/1.jpg') }}"></div>
+							<h6>By Sebastian Smith, <span>Italian Teacher</span></h6>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/5.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>English Literature Advanced Course</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/2.jpg') }}"></div>
+							<h6>By Maria Williams, <span>English Teacher</span></h6>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/6.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Portrait Photography Course for Begginers</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/3.jpg') }}"></div>
+							<h6>By Jack Smith, <span>Photographer</span></h6>
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="course-item">
+					<figure class="course-preview">
+						<img src="{{ url_for('static',filename='img/courses/3.jpg') }}" alt="">
+						<div class="price">$25</div>
+					</figure>
+					<div class="course-content">
+						<div class="cc-text">
+							<h5>Portrait Photography Course for Begginers</h5>
+							<p>Donec molestie tincidunt tellus sit amet aliquet. Proin auctor nisi ut purus eleifend, et auctor lorem hendrerit. </p>
+							<span><i class="flaticon-student-2"></i>20</span>
+							<span><i class="flaticon-placeholder"></i>3</span>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star i-fade"></i>
+							</div>
+						</div>
+						<div class="seller-info">
+							<div class="seller-pic set-bg" data-setbg="{{ url_for('static',filename='img/courses/sellers/3.jpg') }}"></div>
+							<h6>By Jack Smith, <span>Photographer</span></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Courses section end -->
+{% endblock %}	

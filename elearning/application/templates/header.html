@@ -1,0 +1,24 @@
+<!-- Header section -->
+	<header class="header-section">
+		<div class="header-warp">
+			<div class="container">
+				<a href="{{ url_for('site.index')}}" class="site-logo">
+					<img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+				</a>
+				<div class="user-panel">
+					<a href="{{ url_for('users.login')}}">Login</a><span>/</span><a href="">Register</a>
+				</div>
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+				<ul class="main-menu">
+					<li><a href="{{ url_for('site.index') }}">Home</a></li>
+					<li><a href="{{ url_for('site.about') }}">About us</a></li>
+					<li><a href="{{ url_for('site.courses')}}">Courses</a></li>
+					<li><a href="{{ url_for('site.blogs')}}">Blogs</a></li>
+					<li><a href="{{ url_for('site.contact')}}">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->

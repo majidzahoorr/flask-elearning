@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %} {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Academica Learning Page Template">
+    <meta name="keywords" content="academica, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->   
+  <link href="{{ url_for('static',filename='img/favicon.ico') }}" rel="shortcut icon"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/style/font-awesome.min.css')}}"/>
+  <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/style/flaticon.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/style/owl.carousel.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/style/style.css') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/style/popup_form.css') }}"/>
+
+</head>
+  </head>
+  <body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    {% include 'header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'footer.html' %}
+    <!--  -->
+    <!--  -->
+    <!--====== Javascripts & Jquery ======-->
+    <script src="{{ url_for('static',filename='bootstrap/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/circle-progress.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/main.js') }}"></script>
+    <!-- load for map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+    <script src="{{url_for('static',filename='bootstrap/js/map.js') }}"></script>
+
+  </body>
